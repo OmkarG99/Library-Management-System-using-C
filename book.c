@@ -10,7 +10,7 @@ void storedata(struct library* lib,int size)		// Book Storing function
 	{
 		printf("Enter Book ID: ");
 		scanf("%d",&lib[i].bid);
-		fflush(stdin);
+	//	fflush(stdin);
 		printf("Enter Book Name: ");
 		gets(lib[i].bname);
 		printf("Book Category: ");
@@ -54,7 +54,7 @@ void updatebook(struct library* lib, int size)		// Book Updating function
 			{
 				case 1:
 					{
-						fflush(stdin);
+					//	fflush(stdin);
 						printf("\nEnter Book Name: ");
 						gets(lib[i].bname);
 						c++;
@@ -62,7 +62,7 @@ void updatebook(struct library* lib, int size)		// Book Updating function
 					break;
 				case 2:
 					{
-						fflush(stdin);
+					//	fflush(stdin);
 						printf("Book Category: ");
 						gets(lib[i].category);
 						c++;
@@ -70,7 +70,7 @@ void updatebook(struct library* lib, int size)		// Book Updating function
 					break;
 				case 3:
 					{
-						fflush(stdin);
+					//	fflush(stdin);
 						printf("Author Name: ");
 						gets(lib[i].author);
 						c++;
@@ -78,7 +78,7 @@ void updatebook(struct library* lib, int size)		// Book Updating function
 					break;
 				case 4:
 					{
-						fflush(stdin);
+					//	fflush(stdin);
 						printf("Publication Name: ");
 						gets(lib[i].publication);
 						c++;
@@ -86,7 +86,7 @@ void updatebook(struct library* lib, int size)		// Book Updating function
 					break;
 				case 5:
 					{
-						fflush(stdin);
+					//	fflush(stdin);
 						printf("Enter Book Price: ");
 						scanf("%lf",&lib[i].price);
 						c++;	
@@ -94,7 +94,7 @@ void updatebook(struct library* lib, int size)		// Book Updating function
 					break;	
 				case 6:
 					{
-						fflush(stdin);
+					//	fflush(stdin);
 						printf("\nEnter Book Name: ");
 						gets(lib[i].bname);
 						printf("Book Category: ");
@@ -131,7 +131,7 @@ void searchbook(struct library* lib, int size)		// Book Searching function
 	if(a==2)
 	{
 		printf("\nEnter Author Name: ");
-		fflush(stdin);
+	//	fflush(stdin);
 		gets(n);
 	}
 	for(i=0;i<size;i++)
@@ -218,7 +218,7 @@ void insertbook(struct library* lib,int* size)		// Book Inserting function
 	{
 		printf("Enter Book ID: ");
 		scanf("%d",&lib[i].bid);
-		fflush(stdin);
+	//	fflush(stdin);
 		printf("Enter Book Name: ");
 		gets(lib[i].bname);
 		printf("Book Category: ");
@@ -235,16 +235,16 @@ void insertbook(struct library* lib,int* size)		// Book Inserting function
 		printf("\n\t1 Book inserted successfully...\n");
 }														
 ////////////////////////////////////////////////////////////
-	void end()
-{
-	int s=10;
-	char c[s];
-	strcpy(c,"Thank You");
-	printf("\n\t\t\t");
-	for(i=0;i<s-1;i++)
-	{
-		printf("%c",c[i]);
-		sleep(1);		//After one second execution will go again to for loop
-	}
-}
+// 	void end()
+// {
+// 	int s=10;
+// 	char c[s];
+// 	strcpy(c,"Thank You");
+// 	printf("\n\t\t\t");
+// 	for(i=0;i<s-1;i++)
+// 	{
+// 		printf("%c",c[i]);
+// 		sleep(1);		//After one second execution will go again to for loop
+// 	}
+// }
 	
